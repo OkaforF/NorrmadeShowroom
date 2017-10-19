@@ -194,6 +194,7 @@
 
 *{
     margin: 0;
+    border: 1px solid red;
 }
 
 nav {
@@ -234,7 +235,8 @@ nav a {
 }
 
 #index-logo-cont{
-    width: 25vw;
+    height: 100px;
+    width: 200px;
 }
 
 #index-logo{
@@ -264,7 +266,48 @@ nav a {
 }
 
 
+/*/Index.html Desktop version/*/
+@media (min-width: 1071px){
 
+}
+
+/*/Index.html Ipad version/*/
+@media (min-width: 601px) and (max-width: 1070px){
+
+
+
+}
+
+/*/Index.html Mobile version/*/
+@media (max-width: 600px){
+
+    #video{
+        display: none;
+    }
+
+    #index-header{
+        background-image:url(imgs/background-mobile.jpg);
+        background-size: cover;
+        height: 100vh;
+    }
+
+    #index-header {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+    #navi{
+        margin-top: 60px;
+    }
+
+    #navi a{
+         display: block;
+    }
+
+    #index-logo-div p{
+        display: none;
+    }
+
+}
 
 
 
