@@ -1,321 +1,8 @@
-
-                                    /*sheep page style start*/
-
-                                    body {
-                                        margin: 0;
-                                        font-family: 'Raleway', sans-serif;
-                                    }
-
-                                    #logo {
-                                        height: 40px;
-                                        padding-left: 20px;
-                                    }
-
-                                    #sheapheader {
-                                        background-color: #c2c9d7;
-                                    }
-
-                                    nav a {
-                                        font-family: 'Raleway', sans-serif;
-                                        color: black;
-                                        text-decoration: none;
-                                    }
-
-                                    #shop-bag {
-                                        height: 30px;
-                                    }
-
-                                    #sheepbg {
-                                        background-color: #c2c9d7;
-                                        margin: 0 auto;
-                                        text-align: center;
-                                    }
-
-                                    #sheep-h1,
-                                    h2 {
-                                        font-size: 2em;
-                                        margin-top: 0;
-                                        margin-bottom: 0;
-                                    }
-
-                                    #sheep1,
-                                    .sheep-insta {
-                                        width: 100%;
-                                        height: auto;
-                                    }
-
-                                    #right-icon {
-                                        position: relative;
-                                        height: 20px;
-                                    }
-
-                                    #sheep-spec {
-                                        height: 150px;
-                                    }
-
-                                    .cart-btn {
-                                        background-color: orange;
-                                        height: 30px;
-                                    }
-
-                                    select,
-                                    input,
-                                    .cart-btn {
-                                        margin-bottom: 10px;
-                                        height: 30px;
-                                    }
-
-                                    #input-cont {
-                                        display: flex;
-                                        flex-direction: column;
-                                    }
-
-                                    #price {
-                                        margin: 0 100px 0 100px;
-                                        text-align: justify;
-                                    }
-
-                                    #left-right-icons {
-                                        display: flex;
-                                        flex-direction: row;
-                                        justify-content: space-between;
-                                    }
-
-                                    #left-next-icon {
-                                        transform: rotate(180deg);
-                                    }
-
-                                    #right-next-icon,
-                                    #left-next-icon {
-                                        height: 50px;
-                                    }
-                                    /* video section start*/
-
-                                    #sheep-video-sect {
-                                        background-color: white;
-                                        display: flex;
-                                        flex-direction: column;
-                                        height: 100%;
-                                    }
-
-                                    h2 {
-                                        margin: 80px 0px 80px 20px;
-                                    }
-                                    /* video section start*/
-                                    /* inspiration section start*/
-
-                                    #sheep-inspo {
-                                        display: block;
-                                    }
-                                    /* inspiration section end*/
-                                    /* footer start*/
-
-                                    footer {
-                                        height: 50vh;
-                                        background-color: #bfbaad;
-                                    }
-                                    /*footer end*/
-
-                                    @media (max-width:600px) {
-                                        header {
-                                            padding-top: 20px;
-                                            padding-bottom: 10px;
-                                        }
-                                        #sheepbg {
-                                            display: grid;
-                                            grid-template-columns: repeat(2, 1fr);
-                                            grid-template-areas: "sim sim" "pr pr";
-                                            grid-gap: 5px;
-                                        }
-                                        #sheepimg {
-                                            grid-area: sim;
-                                        }
-                                        #price {
-                                            grid-area: pr;
-                                        }
-                                    }
-
-                                    @media (min-width:601px) {
-                                        #logo {
-                                            height: 60px;
-                                        }
-                                        #sheep-video-sect {
-                                            display: flex;
-                                            flex-direction: row;
-                                        }
-                                        header {
-                                            padding-top: 20px;
-                                            padding-bottom: 10px;
-                                        }
-                                        #sheepbg {
-                                            display: grid;
-                                            grid-template-columns: repeat(2, 1fr);
-                                            grid-template-areas: " sim pr  ";
-                                            grid-gap: 5px;
-                                        }
-                                        #sheepimg {
-                                            grid-area: sim;
-                                        }
-                                        #price {
-                                            grid-area: pr;
-                                            margin: 0 100px 0 100px;
-                                            text-align: justify;
-                                        }
-                                        header {
-                                            display: grid;
-                                            grid-template-columns: repeat(5, 1fr);
-                                        }
-                                        nav {
-                                            grid-column: -1/-3;
-                                            display: flex;
-                                            flex-direction: row;
-                                            justify-content: space-between;
-                                        }
-                                        #insta-feed-cont {
-                                            display: flex;
-                                            flex-direction: row;
-                                        }
-                                        footer {
-                                            display: grid;
-                                            grid-template-columns: repeat(4, 1fr);
-                                            grid-template-areas: "fo . .ft   ";
-                                            grid-gap: 5px;
-                                        }
-                                        #foot-info1 {
-                                            grid-area: fo;
-                                        }
-                                        #foot-info2 {
-                                            grid-area: ft;
-                                        }
-                                    }
-                                    /*sheep page style end*/
-=======
-/*/Index.html Styling/*/
-
-*{
-    margin: 0;
-    border: 1px solid red;
-}
-
-nav {
-    text-align:right;
-
-}
-
-nav a {
-    margin: 16px;
-    font-size: 20px;
-    color: bisque;
-}
-
-
-#video-container {
-   position: relative;
-}
-
-#video {
-  height: auto;
-  vertical-align: middle;
-  width: 100vw;
-}
-
-#index-logo-div{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-gap: 50px;
-    color: white;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-#index-logo-div p{
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-}
-
-#index-logo-cont{
-    height: 100px;
-    width: 200px;
-}
-
-#index-logo{
-    width: 100%;
-}
-
-
-#index-header {
-  background: rgba(0,0,0,0);
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  display: grid;
-}
-
-#navi a {
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-}
-
-
-
-.imagesize {
-    height: 20px;
-    width: 20px;
-}
-
-
-/*/Index.html Desktop version/*/
-@media (min-width: 1071px){
-
-}
-
-/*/Index.html Ipad version/*/
-@media (min-width: 601px) and (max-width: 1070px){
-
-
-
-}
-
-/*/Index.html Mobile version/*/
-@media (max-width: 600px){
-
-    #video{
-        display: none;
-    }
-
-    #index-header{
-        background-image:url(imgs/background-mobile.jpg);
-        background-size: cover;
-        height: 100vh;
-    }
-
-    #index-header {
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-}
-    #navi{
-        margin-top: 60px;
-    }
-
-    #navi a{
-         display: block;
-    }
-
-    #index-logo-div p{
-        display: none;
-    }
-
-}
-
-
-
 /*sheep page style start*/
 
 body {
     margin: 0;
-    font-family: 'ralewayextralight';
+    font-family: 'Raleway', sans-serif;
 }
 
 #logo {
@@ -328,7 +15,7 @@ body {
 }
 
 nav a {
-    font-family: 'ralewayextralight';
+    font-family: 'Raleway', sans-serif;
     color: black;
     text-decoration: none;
 }
@@ -357,6 +44,7 @@ h2 {
 }
 
 #right-icon {
+    position: relative;
     height: 20px;
 }
 
@@ -411,13 +99,6 @@ input,
     height: 100%;
 }
 
-
-/* inspiration section end*/
-
-#sheep-inspo {
-    display: block;
-}
-
 h2 {
     margin: 80px 0px 80px 20px;
 }
@@ -426,7 +107,25 @@ h2 {
 /* video section start*/
 
 
+/* inspiration section start*/
+
+#sheep-inspo {
+    display: block;
+}
+
+
 /* inspiration section end*/
+
+
+/* footer start*/
+
+footer {
+    height: 50vh;
+    background-color: #bfbaad;
+}
+
+
+/*footer end*/
 
 @media (max-width:600px) {
     header {
@@ -452,14 +151,14 @@ h2 {
         height: 60px;
     }
     #sheep-video-sect {
-        padding-top: 50px;
+        display: flex;
         flex-direction: row;
     }
     header {
         padding-top: 20px;
         padding-bottom: 10px;
     }
-    section {
+    #sheepbg {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: " sim pr  ";
@@ -483,61 +182,264 @@ h2 {
         flex-direction: row;
         justify-content: space-between;
     }
-    #sheep-inspo {
-        width: 100vw;
+    #insta-feed-cont {
+        display: flex;
+        flex-direction: row;
+    }
+    footer {
         display: grid;
-        grid-template-columns: repeat( 6, 1fr);
-        grid-template-areas: "fi si ti foi fii sxi";
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "fo . .ft   ";
         grid-gap: 5px;
     }
-    #first-img {
-        grid-area: fi;
+    #foot-info1 {
+        grid-area: fo;
     }
-    #second-img {
-        grid-area: si;
-    }
-    #third-img {
-        grid-area: ti;
-    }
-    #fourth-img {
-        grid-area: foi;
-    }
-    #fifth-img {
-        grid-area: fii;
-    }
-    #sixth-img {
-        grid-area: sxi;
+    #foot-info2 {
+        grid-area: ft;
     }
 }
 
 
 /*sheep page style end*/
 
-/*designers page style begin*/
-#blurb{
-    grid-area: pr;
-        margin: 0 100px 0 100px;
-        text-align: justify;
+
+/*/Index.html Styling/*/
+
+* {
+    margin: 0;
+}
+
+#navi {
+    text-align: right;
+}
+
+#navi a {
+    margin: 16px;
+    font-size: 20px;
+    color: bisque;
+}
+
+#video-container {
+    position: relative;
+}
+
+#video {
+    height: auto;
+    vertical-align: middle;
+    width: 100vw;
+}
+
+#index-logo-div {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 50px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#index-logo-div p {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+#index-logo-cont {
+    height: 100px;
+    width: 200px;
+}
+
+#index-logo {
+    width: 100%;
+}
+
+#index-header {
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+}
+
+#navi a {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.imagesize {
+    height: 20px;
+    width: 20px;
+}
+
+
+/*/Index.html Desktop version/*/
+
+@media (min-width: 1071px) {}
+
+
+/*/Index.html Ipad version/*/
+
+@media (min-width: 601px) and (max-width: 1070px) {
+
+    #index-header {
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #index-logo-div p {
+        display: none;
+    }
+    #navi a{
+        font-size: 20px;
+    }
+}
+
+
+/*/Index.html Mobile version/*/
+
+@media (max-width: 600px) {
+    #video {
+        display: none;
+    }
+    #index-header {
+        background-image: url(imgs/background-mobile.jpg);
+        background-size: cover;
+        height: 100vh;
+    }
+    #index-header {
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+    }
+    #navi {
+        margin-top: 60px;
+    }
+    #navi a {
+        display: block;
+    }
+    #index-logo-div p {
+        display: none;
+    }
+}
+
+/*/Merging Camile's code/*/
+
+.box {
+   width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    display: table;
+    margin: 0 auto;
+
 
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    justify-content: center;
+
+
+
+}
+
+.lola {
+    height: 200px;
+    width: 200px;
+    margin-top: 45px;
+
+}
+
+.lolb {
+    height: 290px;
+    width: 110px;
+}
+
+.lolc {
+    height: 200px;
+    width: 200px;
+    margin-top: 45px;
+}
+
+.lold {
+    height: 260px;
+    width: 200px;
+}
+
+.lole {
+    height: 100px;
+    width: 100px;
+    margin-top: 75px;
+}
+
+.lolf {
+    height: 280px;
+    width: 200px;
+}
+
+.lolg {
+    height: 290px;
+    width: 110px;
+}
+
+.lolh {
+    height: 280px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.loli {
+    height: 300px;
+    width: 240px;
+}
+
+
+
+
+#update {
+
+    margin-top: 80px;
+
+    text-align: center;
+
+
+}
+
+
+
+/*designers page style begin*/
+
+#blurb {
+    grid-area: pr;
+    margin: 0 100px 0 100px;
+    text-align: justify;
+}
+
 #blurb-h1,
 h2 {
     font-size: 2em;
     margin-top: 0;
     margin-bottom: 0;
 }
-#designerimg{
+
+#designerimg {
     width: 100%;
     height: auto;
 }
-#philosophy-h1{
+
+#philosophy-h1 {
     font-size: 2em;
     margin-top: 1em;
 }
-.designerText{
+
+.designerText {
     padding-top: .5em;
     padding-bottom: .5em;
 }
-#designerimg{
+
+#designerimg {
     padding: 1em;
 }
