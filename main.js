@@ -1,33 +1,29 @@
 let arrayOfImages = [
-    "imgs/sheeprear.png",
-     "imgs/feltrear.png",
-    "imgs/sheepfelt.png"
+
+    "imgs/blacksheep.png",
+
+
+    "imgs/sheepfelt.png",
+    "imgs/sheep.png"
 
 
 
 
 
 ]
+let clicks = 0;
+let
 
+function onClick() {
+    console.log(clicks);
+    console.log("I have been clicked");
+    document.getElementById("sheep1").src = arrayOfImages[clicks];
 
-let rightIcon = document.querySelector("#right-icon");
-let price = document.querySelector("#price");
+    clicks += 1;
+    console.log("button1", clicks);
 
-
-
-
-
-rightIcon.addEventListener("click", imageSwitch);
-
-
-numberOfClicks = 0;
-
-function () {
-
-    numberOfClicks++;
-
-    if (numberOfClicks == arrayOfImages.length) {
-        numberOfClicks = 0;
+    if (clicks === arrayOfImages.length) {
+        clicks = 0;
     }
 
-}
+};
