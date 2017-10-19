@@ -118,8 +118,6 @@ h2 {
 }
 
 
-/* video section start*/
-
 
 /* inspiration section start*/
 
@@ -243,6 +241,7 @@ footer {
         justify-content: space-around;
     }
     /*sheep page style end*/
+
     /*/Index.html Styling/*/
     * {
         margin: 0;
@@ -302,43 +301,142 @@ footer {
         width: 20px;
     }
     /*/Index.html Desktop version/*/
-    @media (min-width: 1071px) {}
-    /*/Index.html Ipad version/*/
-    @media (min-width: 601px) and (max-width: 1070px) {
-        #index-header {
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-        #index-logo-div p {
-            display: none;
-        }
-        #navi a {
-            font-size: 20px;
-        }
+
+@media (min-width: 1071px) {
+
+    #update {
+    margin-top: 80px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+ #navi a {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: right;
+}
+
+#navi a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2.5px;
+    bottom: 55px;
+    left: 0;
+    background-color: white;
+    visibility: visible;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    transform-origin: left;
+}
+
+#navi a:hover:after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+}
+
+
+/*/Index.html Ipad version/*/
+
+@media (min-width: 601px) and (max-width: 1070px) {
+    #index-header {
+        grid-template-columns: 1fr 1fr 1fr;
     }
-    /*/Index.html Mobile version/*/
-    @media (max-width: 600px) {
-        #video {
-            display: none;
-        }
-        #index-header {
-            background-image: url(imgs/background-mobile.jpg);
-            background-size: cover;
-            height: 100vh;
-        }
-        #index-header {
-            grid-template-columns: 1fr 1fr;
-            display: grid;
-        }
-        #navi {
-            margin-top: 60px;
-        }
-        #navi a {
-            display: block;
-        }
-        #index-logo-div p {
-            display: none;
-        }
+    #index-logo-div p {
+        display: none;
     }
+    #navi {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #navi a {
+        font-size: 15px;
+    }
+
+    #navi a {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: right;
+}
+
+#navi a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2.5px;
+    bottom: 65px;
+    left: 0;
+    background-color: white;
+    visibility: visible;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    transform-origin: left;
+}
+
+#navi a:hover:after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+    #update {
+    margin-top: 80px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+
+/*/Index.html Mobile version/*/
+
+@media (max-width: 600px) {
+    #video {
+        display: none;
+    }
+    #index-header {
+        background-image: url(imgs/background-mobile.jpg);
+        background-size: cover;
+        height: 100vh;
+    }
+    #index-header {
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+    }
+    #index-logo-div {
+        grid-gap: 0px;
+    }
+    #navi {
+        margin-top: 60px;
+    }
+    #navi a {
+        text-align: right;
+        display: block;
+        margin-right: 25px;
+    }
+    #index-logo-div p {
+        display: none;
+    }
+
+    #update {
+        display: none;
+    }
+
+    #p-cont{
+        display: none;
+    }
+}
+
     /*/Merging Camile's code/*/
 
     .wrapper {
@@ -387,6 +485,8 @@ footer {
         height: 300px;
         width: 240px;
     }
+
+
     /*designers page style begin*/
     /*#blurb {
                         grid-area: pr;
@@ -414,7 +514,8 @@ footer {
                     #designerimg {
                         padding: 1em;
                     }*/
-    =======/*sheep page style start*/
+
+    /*sheep page style start*/
     body {
         margin: 0;
         font-family: 'Raleway', sans-serif;
@@ -607,273 +708,7 @@ footer {
         transform: scaleX(1);
     }
     /*sheep page style end*/
-    /*/Index.html Styling/*/
-    * {
-        margin: 0;
-    }
-    #navi a {
-        margin: 16px;
-        font-size: 20px;
-    }
-    #video-container {
-        position: relative;
-    }
-    #video {
-        height: auto;
-        vertical-align: middle;
-        width: 100vw;
-    }
-    #index-logo-div {
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-gap: 50px;
-        color: white;
-        margin-left: 20px;
-        margin-top: 20px;
-    }
-    #index-logo-div p {
-        color: white;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 500;
-    }
-    #index-logo-cont {
-        height: 100px;
-        width: 200px;
-    }
-    #index-logo {
-        width: 100%;
-    }
-    #index-header {
-        background: rgba(0, 0, 0, 0);
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        display: grid;
-    }
-    #navi a {
-        color: white;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 500;
-    }
-    .imagesize {
-        height: 20px;
-        width: 20px;
-    }
-    #p-cont {
-        margin: 30px 0 0 15px;
-    }
-    #p-cont p {
-        font-size: 40px;
-    }
-    .box p {
-        margin-top: 30px;
-        font-size: 20px;
-    }
-    .box {
-        margin: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    #box1,
-    #box2,
-    #box3,
-    #box4,
-    #box5,
-    #box6,
-    #box7,
-    #box8,
-    #box9 {
-        transition: 0.2s ease-in;
-    }
-    #box1:hover {
-        background-color: #beb9ad
-    }
-    #box2:hover {
-        background-color: #B5BAAE
-    }
-    #box3:hover {
-        background-color: #e1cad0
-    }
-    #box4:hover {
-        background-color: #c2c9d7
-    }
-    #box5:hover {
-        background-color: #cacbcc
-    }
-    #box6:hover {
-        background-color: #beb9ad
-    }
-    #box7:hover {
-        background-color: #cacbcc
-    }
-    #box8:hover {
-        background-color: #c2c9d7
-    }
-    #box9:hover {
-        background-color: #e1cad0
-    }
-    /*/Index.html Desktop version/*/
-    @media (min-width: 1071px) {
-        #update {
-            margin-top: 80px;
-            text-align: center;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-        #navi a {
-            position: relative;
-            text-decoration: none;
-            cursor: pointer;
-            text-align: right;
-        }
-        #navi a:after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 2.5px;
-            bottom: 55px;
-            left: 0;
-            background-color: white;
-            visibility: visible;
-            -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-            -webkit-transition: all 0.3s ease-in-out 0s;
-            transition: all 0.3s ease-in-out 0s;
-            transform-origin: left;
-        }
-        #navi a:hover:after {
-            visibility: visible;
-            -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-        }
-    }
-    /*/Index.html Ipad version/*/
-    @media (min-width: 601px) and (max-width: 1070px) {
-        #index-header {
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-        #index-logo-div p {
-            display: none;
-        }
-        #navi {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
-        #navi a {
-            font-size: 15px;
-        }
-        #navi a {
-            position: relative;
-            text-decoration: none;
-            cursor: pointer;
-            text-align: right;
-        }
-        #navi a:after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 2.5px;
-            bottom: 65px;
-            left: 0;
-            background-color: white;
-            visibility: visible;
-            -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-            -webkit-transition: all 0.3s ease-in-out 0s;
-            transition: all 0.3s ease-in-out 0s;
-            transform-origin: left;
-        }
-        #navi a:hover:after {
-            visibility: visible;
-            -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-        }
-        #update {
-            margin-top: 80px;
-            text-align: center;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-    }
-    /*/Index.html Mobile version/*/
-    @media (max-width: 600px) {
-        #video {
-            display: none;
-        }
-        #index-header {
-            background-image: url(imgs/background-mobile.jpg);
-            background-size: cover;
-            height: 100vh;
-        }
-        #index-header {
-            grid-template-columns: 1fr 1fr;
-            display: grid;
-        }
-        #index-logo-div {
-            grid-gap: 0px;
-        }
-        #navi {
-            margin-top: 60px;
-        }
-        #navi a {
-            text-align: right;
-            display: block;
-            margin-right: 25px;
-        }
-        #index-logo-div p {
-            display: none;
-        }
-        #update {
-            display: none;
-        }
-        #p-cont {
-            display: none;
-        }
-    }
-    /*/Merging Camile's code/*/
-    .lola {
-        height: 200px;
-        width: 200px;
-        margin-top: 45px;
-    }
-    .lolb {
-        height: 290px;
-        width: 110px;
-    }
-    .lolc {
-        height: 200px;
-        width: 200px;
-        margin-top: 45px;
-    }
-    .lold {
-        height: 260px;
-        width: 200px;
-    }
-    .lole {
-        height: 100px;
-        width: 100px;
-        margin-top: 75px;
-    }
-    .lolf {
-        height: 280px;
-        width: 200px;
-    }
-    .lolg {
-        height: 290px;
-        width: 110px;
-    }
-    .lolh {
-        height: 280px;
-        width: 200px;
-        margin-top: 10px;
-    }
-    .loli {
-        height: 300px;
-        width: 240px;
-    }
+
     /*designers page style begin*/
     #blurb {
         grid-area: pr;
