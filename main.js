@@ -12,7 +12,7 @@ let arrayOfImages = [
 
 ]
 let clicks = 0;
-let
+
 
 function onClick() {
     console.log(clicks);
