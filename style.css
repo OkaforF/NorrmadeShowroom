@@ -45,32 +45,39 @@ h2 {
 }
 
 #sheep1,
-#sheeprear,
 .sheep-insta {
     width: 100%;
     height: auto;
 }
 
-#sheepinfo {
-    padding: 0 100px 0 20px;
-    text-align: justify;
+#right-icon {
+    height: 20px;
 }
 
 #sheep-spec {
     height: 150px;
-    ;
 }
 
 .cart-btn {
     background-color: orange;
     height: 30px;
-    margin-bottom: 20px;
+}
+
+select,
+input,
+.cart-btn {
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+#input-cont {
+    display: flex;
+    flex-direction: column;
 }
 
 #price {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
+    margin: 0 100px 0 100px;
+    text-align: justify;
 }
 
 #left-right-icons {
@@ -118,16 +125,13 @@ h2 {
 @media (max-width:600px) {
     header {
         padding-top: 20px;
-        padding-bottom: 50px;
+        padding-bottom: 10px;
     }
     #sheepbg {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: "sim sim sim" "sin sin sin " " pr pr pr";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "sim sim" "pr pr";
         grid-gap: 5px;
-    }
-    #sheepinfo {
-        grid-area: sin;
     }
     #sheepimg {
         grid-area: sim;
@@ -147,7 +151,7 @@ h2 {
     }
     header {
         padding-top: 20px;
-        padding-bottom: 100px;
+        padding-bottom: 10px;
     }
     section {
         display: grid;
@@ -160,6 +164,8 @@ h2 {
     }
     #price {
         grid-area: pr;
+        margin: 0 100px 0 100px;
+        text-align: justify;
     }
     header {
         display: grid;
