@@ -1,3 +1,4 @@
+
                                     /*sheep page style start*/
 
                                     body {
@@ -188,3 +189,284 @@
                                         }
                                     }
                                     /*sheep page style end*/
+=======
+/*/Index.html Styling/*/
+
+*{
+    margin: 0;
+}
+
+nav {
+    text-align:right;
+
+}
+
+nav a {
+    margin: 16px;
+    font-size: 20px;
+    color: bisque;
+}
+
+
+#video-container {
+   position: relative;
+}
+
+#video {
+  height: auto;
+  vertical-align: middle;
+  width: 100vw;
+}
+
+#index-logo-div{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 50px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#index-logo-div p{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+#index-logo-cont{
+    width: 25vw;
+}
+
+#index-logo{
+    width: 100%;
+}
+
+
+#index-header {
+  background: rgba(0,0,0,0);
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
+}
+
+#navi a {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+
+
+.imagesize {
+    height: 20px;
+    width: 20px;
+}
+
+
+
+
+
+
+/*sheep page style start*/
+
+body {
+    margin: 0;
+    font-family: 'ralewayextralight';
+}
+
+#logo {
+    height: 40px;
+    padding-left: 20px;
+}
+
+#sheapheader {
+    background-color: #c2c9d7;
+}
+
+nav a {
+    font-family: 'ralewayextralight';
+    color: black;
+    text-decoration: none;
+}
+
+#shop-bag {
+    height: 30px;
+}
+
+#sheepbg {
+    background-color: #c2c9d7;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#sheep-h1,
+h2 {
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#sheep1,
+.sheep-insta {
+    width: 100%;
+    height: auto;
+}
+
+#right-icon {
+    height: 20px;
+}
+
+#sheep-spec {
+    height: 150px;
+}
+
+.cart-btn {
+    background-color: orange;
+    height: 30px;
+}
+
+select,
+input,
+.cart-btn {
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+#input-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+#price {
+    margin: 0 100px 0 100px;
+    text-align: justify;
+}
+
+#left-right-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#left-next-icon {
+    transform: rotate(180deg);
+}
+
+#right-next-icon,
+#left-next-icon {
+    height: 50px;
+}
+
+
+/* video section start*/
+
+#sheep-video-sect {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+/* inspiration section end*/
+
+#sheep-inspo {
+    display: block;
+}
+
+h2 {
+    margin: 80px 0px 80px 20px;
+}
+
+
+/* video section start*/
+
+
+/* inspiration section end*/
+
+@media (max-width:600px) {
+    header {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    #sheepbg {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "sim sim" "pr pr";
+        grid-gap: 5px;
+    }
+    #sheepimg {
+        grid-area: sim;
+    }
+    #price {
+        grid-area: pr;
+    }
+}
+
+@media (min-width:601px) {
+    #logo {
+        height: 60px;
+    }
+    #sheep-video-sect {
+        padding-top: 50px;
+        flex-direction: row;
+    }
+    header {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: " sim pr  ";
+        grid-gap: 5px;
+    }
+    #sheepimg {
+        grid-area: sim;
+    }
+    #price {
+        grid-area: pr;
+        margin: 0 100px 0 100px;
+        text-align: justify;
+    }
+    header {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    nav {
+        grid-column: -1/-3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #sheep-inspo {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat( 6, 1fr);
+        grid-template-areas: "fi si ti foi fii sxi";
+        grid-gap: 5px;
+    }
+    #first-img {
+        grid-area: fi;
+    }
+    #second-img {
+        grid-area: si;
+    }
+    #third-img {
+        grid-area: ti;
+    }
+    #fourth-img {
+        grid-area: foi;
+    }
+    #fifth-img {
+        grid-area: fii;
+    }
+    #sixth-img {
+        grid-area: sxi;
+    }
+}
+
+
+/*sheep page style end*/
+
