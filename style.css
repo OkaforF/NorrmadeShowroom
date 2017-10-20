@@ -627,3 +627,21 @@ h2 {
     padding-top: .5em;
     padding-bottom: .5em;
 }
+
+
+#doc-link-cont{
+    margin: 60px;
+}
+
+#doc-link{
+    text-decoration: none;
+    color: black;
+}
+
+#doc-link:hover{
+    text-decoration: underline;
+}
+
+#link-to-doc{
+    font-size: 40px;
+}
