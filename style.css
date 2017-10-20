@@ -137,43 +137,38 @@
 /*/Index.html Desktop version/*/
 
 @media (min-width: 1071px) {
-
     #update {
-    margin-top: 80px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
- #navi a {
-    position: relative;
-    text-decoration: none;
-    cursor: pointer;
-    text-align: right;
-}
-
-#navi a:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2.5px;
-    bottom: 55px;
-    left: 0;
-    background-color: white;
-    visibility: visible;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-    transform-origin: left;
-}
-
-#navi a:hover:after {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
+        margin-top: 80px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #navi a {
+        position: relative;
+        text-decoration: none;
+        cursor: pointer;
+        text-align: right;
+    }
+    #navi a:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2.5px;
+        bottom: 55px;
+        left: 0;
+        background-color: white;
+        visibility: visible;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+        transform-origin: left;
+    }
+    #navi a:hover:after {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
 }
 
 
@@ -192,43 +187,38 @@
     #navi a {
         font-size: 15px;
     }
-
     #navi a {
-    position: relative;
-    text-decoration: none;
-    cursor: pointer;
-    text-align: right;
-}
-
-#navi a:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2.5px;
-    bottom: 65px;
-    left: 0;
-    background-color: white;
-    visibility: visible;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-    transform-origin: left;
-}
-
-#navi a:hover:after {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
-
+        position: relative;
+        text-decoration: none;
+        cursor: pointer;
+        text-align: right;
+    }
+    #navi a:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2.5px;
+        bottom: 65px;
+        left: 0;
+        background-color: white;
+        visibility: visible;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+        transform-origin: left;
+    }
+    #navi a:hover:after {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
     #update {
-    margin-top: 80px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
+        margin-top: 80px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 
@@ -261,12 +251,10 @@
     #index-logo-div p {
         display: none;
     }
-
     #update {
         display: none;
     }
-
-    #p-cont{
+    #p-cont {
         display: none;
     }
 }
@@ -322,6 +310,10 @@
     height: 300px;
     width: 240px;
 }
+
+
+/*/----------------------------Fiona--------------------------------------------------/*/
+
 
 /*sheep page style start*/
 
@@ -438,12 +430,16 @@ input,
 
 /* video section start*/
 
+#sheep-video-sect {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 h2 {
     margin: 80px 0px 80px 20px;
 }
-
-
-/* video section start*/
 
 
 /* inspiration section start*/
@@ -463,13 +459,12 @@ footer {
     background-color: #bfbaad;
 }
 
-#designer-photo {
-    height: 50%;
-    width: auto;
-}
+
 
 
 /*footer end*/
+
+/*/Mobile styling/*/
 
 @media (max-width:600px) {
     header {
@@ -501,22 +496,28 @@ footer {
     }
 }
 
+/*/Desktop styling/*/
+
 @media (min-width:601px) {
     #logo {
         height: 60px;
+    }
+    #sheep-video-sect {
+        display: flex;
+        flex-direction: row;
     }
     header {
         padding-top: 20px;
         padding-bottom: 10px;
     }
-    #shop-bag {
+     #shop-bag {
         margin-right: 20px;
         margin-top: -10px;
     }
     #sheepbg {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: " sim pr";
+        grid-template-areas: " sim pr  ";
         grid-gap: 5px;
     }
     #designerbg {
@@ -548,6 +549,7 @@ footer {
         flex-direction: row;
         justify-content: space-between;
     }
+
     footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -555,6 +557,7 @@ footer {
         grid-gap: 5px;
         margin-top: 80px;
         padding-top: 50px;
+
     }
     #foot-info1 {
         grid-area: fo;
@@ -562,258 +565,65 @@ footer {
     #foot-info2 {
         grid-area: ft;
     }
-    #sheep-video-sect {
+     #sheep-video-sect {
         margin-top: 80px;
-        display: flex;
         justify-content: space-around;
     }
-    /*sheep page style end*/
+}
 
-    /*designers page style begin*/
-    /*#blurb {
-                        grid-area: pr;
-                        margin: 0 100px 0 100px;
-                        text-align: justify;
-                    }
-                    #blurb-h1,
-                    h2 {
-                        font-size: 2em;
-                        margin-top: 0;
-                        margin-bottom: 0;
-                    }
-                    #designerimg {
-                        width: 100%;
-                        height: auto;
-                    }
-                    #philosophy-h1 {
-                        font-size: 2em;
-                        margin-top: 1em;
-                    }
-                    .designerText {
-                        padding-top: .5em;
-                        padding-bottom: .5em;
-                    }
-                    #designerimg {
-                        padding: 1em;
-                    }*/
-    /*sheep page style start*/
-    body {
-        margin: 0;
-        font-family: 'Raleway', sans-serif;
-    }
-    #logo {
-        height: 40px;
-        padding-left: 20px;
-    }
-    #sheapheader {
-        background-color: #c2c9d7;
-    }
-    nav a {
-        font-family: 'Raleway', sans-serif;
-        color: black;
-        text-decoration: none;
-    }
-    #shop-bag {
-        height: 30px;
-    }
-    #sheepbg {
-        background-color: #c2c9d7;
-        margin: 0 auto;
-        text-align: center;
-    }
-    #sheep-h1,
-    h2 {
-        font-size: 2em;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    #sheep1,
-    .sheep-insta {
-        width: 100%;
-        height: auto;
-    }
-    #right-icon {
-        position: relative;
-        height: 20px;
-    }
-    #sheep-spec {
-        height: 150px;
-    }
-    .cart-btn {
-        background-color: orange;
-        height: 30px;
-    }
-    select,
-    input,
-    .cart-btn {
-        margin-bottom: 10px;
-        height: 30px;
-    }
-    #input-cont {
-        display: flex;
-        flex-direction: column;
-    }
-    #price {
-        margin: 0 100px 0 100px;
-        text-align: justify;
-    }
-    #left-right-icons {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    #left-next-icon {
-        transform: rotate(180deg);
-    }
-    #right-next-icon,
-    #left-next-icon {
-        height: 50px;
-    }
-    /* video section start*/
-    #sheep-video-sect {
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
-    h2 {
-        margin: 80px 0px 80px 20px;
-    }
-    /* video section start*/
-    /* inspiration section start*/
-    #sheep-inspo {
-        display: block;
-    }
-    /* inspiration section end*/
-    /* footer start*/
-    footer {
-        height: 50vh;
-        background-color: #bfbaad;
-    }
-    /*footer end*/
-    @media (max-width:600px) {
-        header {
-            padding-top: 20px;
-            padding-bottom: 10px;
-        }
-        #sheepbg {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-areas: "sim sim" "pr pr";
-            grid-gap: 5px;
-        }
-        #sheepimg {
-            grid-area: sim;
-        }
-        #price {
-            grid-area: pr;
-        }
-    }
-    @media (min-width:601px) {
-        #logo {
-            height: 60px;
-        }
-        #sheep-video-sect {
-            display: flex;
-            flex-direction: row;
-        }
-        header {
-            padding-top: 20px;
-            padding-bottom: 10px;
-        }
-        #sheepbg {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-areas: " sim pr  ";
-            grid-gap: 5px;
-        }
-        #sheepimg {
-            grid-area: sim;
-        }
-        #price {
-            grid-area: pr;
-            margin: 0 100px 0 100px;
-            text-align: justify;
-        }
-        header {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-        }
-        nav {
-            grid-column: -1/-3;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        #insta-feed-cont {
-            display: flex;
-            flex-direction: row;
-        }
-        footer {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-areas: "fo . .ft   ";
-            grid-gap: 5px;
-        }
-        #foot-info1 {
-            grid-area: fo;
-        }
-        #foot-info2 {
-            grid-area: ft;
-        }
-    }
-    .nav-other a {
-        position: relative;
-        text-decoration: none;
-        cursor: pointer;
-        text-align: right;
-    }
-    .nav-other a:after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2.5px;
-        bottom: 40px;
-        left: 0;
-        background-color: black;
-        visibility: visible;
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -webkit-transition: all 0.3s ease-in-out 0s;
-        transition: all 0.3s ease-in-out 0s;
-        transform-origin: left;
-    }
-    .nav-other a:hover:after {
-        visibility: visible;
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1);
-    }
-    /*sheep page style end*/
+/*/navigation underline animation/*/
 
-    /*designers page style begin*/
-    #blurb {
-        grid-area: pr;
-        margin: 0 100px 0 100px;
-        text-align: justify;
-    }
-    #blurb-h1,
-    h2 {
-        font-size: 2em;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    #designerimg {
-        width: 100%;
-        height: auto;
-    }
-    #philosophy-h1 {
-        font-size: 2em;
-        margin-top: 1em;
-    }
-    .designerText {
-        padding-top: .5em;
-        padding-bottom: .5em;
-    }
-    #designerimg {
-        padding: 1em;
-    }
+.nav-other a {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: right;
+}
+
+.nav-other a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2.5px;
+    bottom: 40px;
+    left: 0;
+    background-color: black;
+    visibility: visible;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    transform-origin: left;
+}
+
+.nav-other a:hover:after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+/*sheep page style end*/
+
+
+/*/Global styling for the designers page/*/
+
+#blurb {
+    margin: 0 100px 0 100px;
+    text-align: justify;
+}
+
+#blurb-h1,
+h2 {
+    font-size: 2em;
+}
+
+#philosophy-h1 {
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+.designerText {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
